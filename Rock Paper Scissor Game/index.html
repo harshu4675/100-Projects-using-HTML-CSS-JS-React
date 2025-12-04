@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deluxe Rock Paper Scissors</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- FIX: added defer so Game.js loads AFTER the HTML -->
+    <script src="Game.js" defer></script>
+  </head>
+
+  <body>
+    <div class="game-container">
+      <h1>Harshu's Rock Paper Scissors Game</h1>
+      <div class="choices">
+        <div class="choice" id="rock">Rock</div>
+        <div class="choice" id="paper">Paper</div>
+        <div class="choice" id="scissors">Scissors</div>
+      </div>
+      <div class="result" id="result">Make your move!</div>
+      <div class="score" id="score">Player: 0 | Computer: 0</div>
+      <div class="history" id="history"></div>
+      <button class="btn-reset" onclick="resetGame()">Reset Game</button>
+    </div>
+  </body>
+</html>
